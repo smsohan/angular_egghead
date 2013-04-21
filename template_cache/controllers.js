@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', []);
 
-myApp.directive('zippy', function($templateCache){
+myApp.directive('zippy', function(){
 
   return {
     restrict: 'E',
