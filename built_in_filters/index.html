@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+  <div ng-app="myApp">
+
+    <div ng-controller="PlayersController">
+
+      <input type="search" ng-model="search.name"/>
+      <ul>
+        <li ng-repeat="player in players.all | filter:search | orderBy: 'name' | limitTo:5">
+          {{player.name | uppercase}} - {{player.team | lowercase}}
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+  <script type="text/javascript" src="controllers.js"></script>
+
+</body>
+</html>
