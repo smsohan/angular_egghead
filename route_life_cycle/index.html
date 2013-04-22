@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+  <div ng-app="myApp">
+
+    <script type="text/ng-template" id="app.html">
+      <h3>Showing all</h3>
+      <div ng-click="addNew()">Add New</div>
+    </script>
+
+    <script type="text/ng-template" id="new.html">
+      <h3>{{message}}</h3>
+    </script>
+
+
+    <ng-view></ng-view>
+
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+  <script type="text/javascript" src="controllers.js"></script>
+</body>
+</html>
